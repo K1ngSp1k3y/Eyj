@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OrbSuiteSpoofer · Revenge Plugin</title>
+  <style>
+    :root {
+      --bg: #09090d;
+      --panel: #12121a;
+      --panel-2: #171722;
+      --border: #262638;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --accent: #7c3aed;
+      --accent-hover: #6d28d9;
+      --purple-glow: rgba(124, 58, 237, 0.18);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at top, var(--purple-glow), transparent 55%), var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 32px 16px;
+      line-height: 1.5;
+    }
+    main { width: 100%; max-width: 620px; }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #c4b5fd;
+      background: rgba(124, 58, 237, 0.15);
+      border: 1px solid rgba(124, 58, 237, 0.35);
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+    .tag i { width: 6px; height: 6px; border-radius: 50%; background: #a78bfa; }
+    h1 { margin: 12px 0 8px; font-size: 32px; letter-spacing: -0.02em; }
+    h1 span { color: #a78bfa; }
+    .sub { color: var(--muted); margin: 0 0 20px; font-size: 15px; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+    .field {
+      width: 100%;
+      background: var(--panel-2);
+      color: #e5e7eb;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+      resize: none;
+    }
+    .btns { display: flex; gap: 10px; margin-top: 10px; }
+    button {
+      flex: 1;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--panel-2);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    button.go { background: var(--accent); border-color: var(--accent); }
+    button.go:hover { background: var(--accent-hover); }
+    ol { margin: 0; padding-left: 20px; color: #d1d5db; font-size: 14px; }
+    ol li { margin-bottom: 6px; }
+    ul.flat, ul.chk { list-style: none; margin: 0; padding: 0; }
+    ul.flat li {
+      display: flex;
+      gap: 12px;
+      padding: 10px 0;
+      border-top: 1px solid var(--border);
+    }
+    ul.flat li:first-child { border-top: none; padding-top: 0; }
+    .k {
+      font-family: monospace;
+      color: #a78bfa;
+      font-weight: 700;
+      font-size: 13px;
+      padding-top: 2px;
+    }
+    ul.flat b { display: block; font-size: 14px; }
+    ul.flat span { font-size: 13px; color: var(--muted); }
+    ul.chk li {
+      display: flex;
+      justify-content: space-between;
+      padding: 7px 0;
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+    }
+    ul.chk li:first-child { border-top: none; }
+    footer { margin-top: 18px; font-size: 12px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="tag"><i></i>revenge · plugin</div>
+    <h1>OrbSuite<span>Spoofer</span></h1>
+    <p class="sub">
+      Self-only cosmetic shop &amp; Nitro suite preview, local badges, and 100 device presets for Revenge.
+    </p>
+
+    <div class="panel">
+      <h2>Install Link (Paste into Revenge)</h2>
+      <textarea class="field" id="url" rows="2" readonly>resolving…</textarea>
+      <div class="btns">
+        <button class="go" id="copy" type="button">Copy Install Link</button>
+        <button id="open-revenge" type="button">Open in Revenge</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Install in Revenge</h2>
+      <ol>
+        <li>Extract the ZIP and host <code>index.html</code>, <code>manifest.json</code>, and <code>OrbSuiteSpoofer.js</code> on HTTPS (such as GitHub Pages).</li>
+        <li>Open Discord with <b>Revenge</b> running.</li>
+        <li>Go to <b>Settings → Plugins → +</b> and paste the install link above.</li>
+        <li>Enable <b>OrbSuiteSpoofer</b> and open Settings to use the shop, badges, Nitro toggles, and 100 device presets.</li>
+      </ol>
+    </div>
+
+    <div class="panel">
+      <h2>Included Features</h2>
+      <ul class="flat">
+        <li><span class="k">01</span><div><b>Self-Only Shop &amp; Orbs Preview</b><span>Local Orb balance, shop items, avatar frames, profile effects, and nameplates (shown only to you).</span></div></li>
+        <li><span class="k">02</span><div><b>Full Nitro Suite &amp; Badges</b><span>Client-side Nitro tier, Early Supporter / HypeSquad / Active Dev flags, emoji/sticker/HD/app icon toggles.</span></div></li>
+        <li><span class="k">03</span><div><b>100-Device Spoofer</b><span>Cycle through 100 mobile, tablet, VR, console, handheld, desktop, and web presets.</span></div></li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Host Check</h2>
+      <ul class="chk">
+        <li><span>Secure context (HTTPS)</span><span id="c1">–</span></li>
+        <li><span>Clipboard access</span><span id="c2">–</span></li>
+        <li><span>manifest.json reachable</span><span id="c3">–</span></li>
+        <li><span>OrbSuiteSpoofer.js reachable</span><span id="c4">–</span></li>
+      </ul>
+    </div>
+
+    <footer>
+      Local client-side cosmetic preview only: does not grant server-side currency or show changes to other users.
+    </footer>
+  </main>
+
+  <script>
+    const baseDirUrl = new URL("./", window.location.href).href;
+    const manifestUrl = new URL("./manifest.json", window.location.href).href;
+    const pluginUrl = new URL("./OrbSuiteSpoofer.js", window.location.href).href;
+
+    const urlField = document.getElementById("url");
+    const copyBtn = document.getElementById("copy");
+    const openBtn = document.getElementById("open-revenge");
+    const c1 = document.getElementById("c1");
+    const c2 = document.getElementById("c2");
+    const c3 = document.getElementById("c3");
+    const c4 = document.getElementById("c4");
+
+    urlField.value = baseDirUrl;
+    c1.textContent = window.isSecureContext ? "yes" : "no";
+
+    const hasClipboard = Boolean(navigator.clipboard && typeof navigator.clipboard.writeText === "function");
+    c2.textContent = hasClipboard ? "available" : "fallback";
+
+    fetch(manifestUrl, { cache: "no-store" })
+      .then((res) => { c3.textContent = res.ok ? `yes (${res.status})` : `no (${res.status})`; })
+      .catch(() => { c3.textContent = "no"; });
+
+    fetch(pluginUrl, { cache: "no-store" })
+      .then((res) => { c4.textContent = res.ok ? `yes (${res.status})` : `no (${res.status})`; })
+      .catch(() => { c4.textContent = "no"; });
+
+    copyBtn.addEventListener("click", async () => {
+      try {
+        if (hasClipboard) {
+          await navigator.clipboard.writeText(baseDirUrl);
+        } else {
+          urlField.select();
+          document.execCommand("copy");
+        }
+        const prev = copyBtn.textContent;
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => { copyBtn.textContent = prev; }, 1400);
+      } catch {
+        urlField.focus();
+        urlField.select();
+      }
+    });
+
+    openBtn.addEventListener("click", () => {
+      window.location.href = `revenge://install?url=${encodeURIComponent(baseDirUrl)}`;
+    });
+  </script>
+</body>
+</html>
